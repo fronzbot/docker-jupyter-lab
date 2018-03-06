@@ -5,8 +5,8 @@ ENV JUPYTER_CONFIG_DIR="/opt/jupyterconfig"
 
 RUN conda update -n base conda
 RUN conda install -c conda-forge jupyterlab
-RUN jupyter serverextension enable --py jupyterlab --sys-prefix
-RUN jupyter notebook --generate-config
+#RUN jupyter serverextension enable --py jupyterlab --sys-prefix
+#RUN jupyter notebook --generate-config
 RUN pip install SchemDraw
 
 EXPOSE 9999

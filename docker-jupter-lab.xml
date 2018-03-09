@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2018-03-09</Date>
+  <Beta>True</Beta>
+  <Category>Tools:Other</Category>
+  <Name>JupyterLab</Name>
+  <Changes>
+    [font size=3]2018.03.09[/font]
+    - Initial Release
+  </Changes>
+  <Overview>
+    Docker container with Jupyter Lab built on a bootstrapped installation of Anaconda (based on Python 3.5) that is ready to use.
+  </Overview>
+  <Description>
+    Docker container with Jupyter Lab built on a bootstrapped installation of Anaconda (based on Python 3.5) that is ready to use.
+    The Anaconda distribution is installed into the /opt/conda folder and ensures that the default user has the conda command in their path.
+     Anaconda is the leading open data science platform powered by Python. The open source version of Anaconda is a high performance distribution and includes over 100 of the most popular Python packages for data science. Additionally, it provides access to over 720 Python and R packages that can easily be installed using the conda dependency and environment manager, which is included in Anaconda.
+  </Description>
+  <Registry>https://hub.docker.com/r/empeee/jupyter-lab/</Registry>
+  <GitHub>https://github.com/empeee/docker-jupyter-lab</GitHub>
+  <Repository>empeee/jupyter-lab</Repository>
+  <Networking>
+      <Mode>bridge</Mode>
+      <Publish>
+          <Port>
+              <HostPort>9999</HostPort>
+              <ContainerPort>9999</ContainerPort>
+              <Protocol>tcp</Protocol>
+          </Port>
+      </Publish>
+  </Networking>
+  <Environment/>
+  <Support/>
+  <Banner/>
+  <WebUI>http://[IP]:[PORT:9999]</WebUI>
+  <Icon>https://raw.githubusercontent.com/jupyter/design/master/logos/Square%20Logo/squarelogo-greytext-orangebody-greymoons/squarelogo-greytext-orangebody-greymoons.png</Icon>
+  <ExtraParams>-i -t</ExtraParams>
+  <DonateText/>
+  <DonateLink/>
+  <DonateImg/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/jupyter-lab</HostDir>
+      <ContainerDir>/opt/jupyterprofile</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/jupyter-lab/notebooks</HostDir>
+      <ContainerDir>/opt/notebooks</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+</Containers>

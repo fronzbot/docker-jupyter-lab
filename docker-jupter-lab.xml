@@ -41,7 +41,7 @@
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/jupyter-lab</HostDir>
-      <ContainerDir>/opt/jupyterprofile</ContainerDir>
+      <ContainerDir>/opt/jupyterconfig</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>

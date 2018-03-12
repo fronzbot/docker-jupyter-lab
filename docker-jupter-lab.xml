@@ -6,6 +6,8 @@
   <Name>JupyterLab</Name>
   <Changes>
     [font size=3]2018.03.09[/font]
+    - Fixed incorrect volume
+    [font size=3]2018.03.09[/font]
     - Initial Release
   </Changes>
   <Overview>
